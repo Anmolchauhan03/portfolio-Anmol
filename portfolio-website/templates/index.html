@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anmol Chauhan - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Anmol Chauhan</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('login') }}">Admin Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Social Media Section -->
+<section class="social-media bg-light py-3 text-center">
+    <a href="https://linkedin.com/in/https://www.linkedin.com/in/anmol-chauhan-56188621b/" target="_blank" class="text-dark mx-2"><i class="fab fa-linkedin fa-2x"></i></a>
+    <a href="https://github.com/anmolchauhan03" target="_blank" class="text-dark mx-2"><i class="fab fa-github fa-2x"></i></a>
+    <a href="https://instagram.com/https://www.instagram.com/rajput__ritik23?igsh=OG91ZXlsdWV1cHU2" target="_blank" class="text-dark mx-2"><i class="fab fa-instagram fa-2x"></i></a>
+    <a href="https://facebook.com/https://www.facebook.com/profile.php?id=100029308051050&mibextid=ZbWKwL" target="_blank" class="text-dark mx-2"><i class="fab fa-facebook fa-2x"></i></a>
+    <a href="https://wa.me/8630977392" target="_blank" class="text-dark mx-2"><i class="fab fa-whatsapp fa-2x"></i></a>
+</section>
+
+<!-- Include Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+<section id="profile" class="p-5 bg-light text-center">
+    <img src="{{ url_for('static', filename='img/photo2.jpg') }}" 
+         class="rounded-circle mb-3" 
+         alt="Profile Picture" 
+         width="150">
+    <h2>Anmol Chauhan</h2>
+    <p class="lead">B.Tech CSE Student <br>
+         Python, Django & Flask Developer</p>
+</section>
+
+    <!-- Professional Summary Section -->
+<section id="summary" class="p-5 bg-light">
+    <h3 class="mb-4 text-center">Professional Summary</h3>
+    <p class="text-center">Accomplished Python Developer & Web Developer with expertise in Django, Flask, and JavaScript. Proven track record in delivering high-performance web applications, secure APIs, and scalable solutions. Seeking a full-time role to apply problem-solving skills and technical expertise in a dynamic development team.</p>
+</section>
+<section id="education" class="p-5 bg-light">
+    <h3 class="mb-4 text-center">Education</h3>
+    <div class="row justify-content-center">
+        <!-- B.Tech Degree -->
+        <div class="col-md-8 mb-3">
+            <div class="card shadow-sm p-3 mb-2 bg-white rounded">
+                <h5>Bachelor of Technology (B.Tech)</h5>
+                <p>Computer Science and Engineering</p>
+                <p><strong>University:</strong> Maharshi Dayanand University,Rohtak</p>
+                <p><strong>Duration:</strong> 2021-25</p>
+            </div>
+        </div>
+        <!-- Class 12 -->
+        <div class="col-md-8 mb-3">
+            <div class="card shadow-sm p-3 mb-2 bg-white rounded">
+                <h5>Class 12 (Senior Secondary)</h5>
+                <p><strong>School:</strong>Sunshine Public School </p>
+                <p><strong>Board:</strong> CBSE</p>
+            </div>
+        </div>
+        <!-- Class 10 -->
+        <div class="col-md-8 mb-3">
+            <div class="card shadow-sm p-3 mb-2 bg-white rounded">
+                <h5>Class 10 (Secondary)</h5>
+                <p><strong>School:</strong> Samar Study Hall</p>
+                <p><strong>Board:</strong> CBSE</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Work Experience Section -->
+<section id="experience" class="p-5">
+    <h3 class="mb-4 text-center">Work Experience</h3>
+    <div class="card shadow-sm p-3 mb-3">
+        <h5>Frontend Developer</h5>
+        <p><strong>Jan 2022 – April 2023</strong></p>
+        <ul>
+            <li>Enhanced UI with jQuery & Bootstrap, improving load times by 35%.</li>
+            <li>Built responsive web apps, increasing mobile traffic by 50%.</li>
+            <li>Integrated RESTful APIs with backend teams, boosting data retrieval by 30%.</li>
+            <li>Refined frontend code, reducing errors by 30% and improving UX.</li>
+        </ul>
+    </div>
+</section>
+<!-- Skills Section -->
+<section id="skills" class="p-5 bg-light">
+    <h3 class="mb-4 text-center">Key Skills</h3>
+    <ul class="list-unstyled text-center">
+        <li>Languages: Python, JavaScript</li>
+        <li>Frontend: HTML, CSS, jQuery, Bootstrap</li>
+        <li>Backend: Django, Flask</li>
+        <li>Databases: MySQL, SQLite, PostgreSQL</li>
+        <li>Tools: Git, GitHub, Heroku, VS Code</li>
+    </ul>
+</section>
+    
+    <section id="projects" class="p-5 bg-light">
+        <h3 class="mb-4 text-center">Projects</h3>
+        <ul class="list-unstyled">
+            <!-- Project 1 -->
+            <li class="mb-3">
+                <button class="btn btn-link text-dark fw-bold" onclick="toggleProject('project1')">Student Portal using Django</button>
+                <div id="project1" class="project-details d-none">
+                    <p>Student Portal using Django
+                        A comprehensive web-based platform built with Django, designed to manage student-related data efficiently. The portal includes:
+                        
+                        Student Management: Add, edit, and view student details including personal information, enrolled subjects, and academic performance.
+                        Subject and Marks Management: Assign subjects to students and manage their marks seamlessly.
+                        Result Generation and Ranking System: Automatically generates results and ranks students based on their academic scores.
+                        User Authentication: Secure login/logout functionality with admin controls for managing data.
+                        Interactive Dashboard: Provides an easy-to-use interface for managing all aspects of student data.
+                        Technologies Used: Django, Python, HTML, CSS, Bootstrap, and SQLite.</p>
+                    <a href="https://github.com/Anmolchauhan03/Student_Database_Website" target="_blank" class="btn btn-primary btn-sm">GitHub</a>
+                   
+                </div>
+            </li>
+            <!-- Project 2 -->
+            <li class="mb-3">
+                <button class="btn btn-link text-dark fw-bold" onclick="toggleProject('project2')">Movie's Ticket Booking </button>
+                <div id="project2" class="project-details d-none">
+                    <p># ticket_booking_movie_website
+                        Movie Booking System
+                        A Flask-based web application for booking movie tickets with real-time movie data integration from TMDB API. This system provides both user and admin interfaces for managing movie bookings efficiently.
+                        🎬 Features
+                        
+                        Real-time movie data fetching from TMDB API
+                        User dashboard for browsing and booking movies
+                        Admin panel for movie management
+                        SQLite database integration
+                        Secure booking system
+                        Responsive web interface
+                        
+                        🛠️ Technical Stack
+                        
+                        Backend: Flask (Python)
+                        Database: SQLite with SQLAlchemy ORM
+                        External API: TMDB (The Movie Database)
+                        Frontend: HTML/Templates
+                        Dependencies: Flask-SQLAlchemy, Requests
+                        
+                        🚀 Getting Started
+                        
+                        Clone the repository:
+                        
+                        bashCopygit clone [repository-url]
+                        cd movie-booking-system
+                        
+                        Install dependencies:
+                        
+                        bashCopypip install -r requirements.txt
+                        
+                        Initialize the database:
+                        
+                        bashCopyflask init-db
+                        
+                        Run the application:
+                        
+                        bashCopypython app.py
+                        💡 Key Features
+                        For Users
+                        
+                        Browse latest movies from TMDB
+                        View movie schedules and pricing
+                        Book movie tickets
+                        Track booking history
+                        
+                        For Administrators
+                        
+                        Add/Delete movies
+                        Manage movie schedules
+                        View booking statistics
+                        Update movie information
+                        
+                        🔧 Configuration
+                        Configure your TMDB API credentials in app.py:
+                        pythonCopyAPI_KEY = 'your-api-key'
+                        TOKEN = 'your-token'
+                        📝 Database Schema
+                        Movies Table
+                        
+                        id (Primary Key)
+                        title
+                        cinema
+                        timing
+                        price
+                        
+                        Bookings Table
+                        
+                        id (Primary Key)
+                        movie_id (Foreign Key)
+                        
+                        🤝 Contributing
+                        Feel free to fork this repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.</p>
+                    <a href="https://github.com/Anmolchauhan03/ticket_booking_movie_website" target="_blank" class="btn btn-primary btn-sm">GitHub</a>
+                </div>
+            </li>
+            <!-- Project 3 -->
+            <li class="mb-3">
+                <button class="btn btn-link text-dark fw-bold" onclick="toggleProject('project3')">Blog Website</button>
+                <div id="project3" class="project-details d-none">
+                    <p>Blog Website using Flask
+                        A dynamic and responsive blogging platform built with Flask, offering users the ability to share and manage content effortlessly. Key features include:
+                        
+                        User Authentication: Secure user registration, login, and logout functionalities.
+                        Create, Edit, and Delete Posts: Users can write, update, and remove blog posts with ease.
+                        Category and Tag Management: Organize posts under different categories and tags for better accessibility.
+                        Comment System: Interactive comment section for user engagement on each post.
+                        Responsive Design: Built using HTML, CSS, JavaScript, and jQuery to ensure a seamless experience across all devices.
+                        Database Integration: Utilizes SQLite for efficient data storage and management.
+                        Technologies Used: Flask, Python, HTML, CSS, JavaScript, jQuery, and SQLite.</p>
+                    <a href="https://github.com/Anmolchauhan03/Blog-Website" target="_blank" class="btn btn-primary btn-sm">GitHub</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    
+    <script>
+        function toggleProject(id) {
+            let project = document.getElementById(id);
+            project.classList.toggle("d-none");
+        }
+    </script>
+    <section id="activities" class="p-5">
+        <h3 class="mb-4 text-center">Extra-Curricular Activities</h3>
+        <div class="card shadow-sm p-3">
+            <h5>Smart India Hackathon (SIH)</h5>
+            <p>Developed a Website Translator using web scraping and translation APIs, adopted by 10+ organizations for multilingual website accessibility.</p>
+        </div>
+    </section>
+    <!-- Soft Skills Section -->
+<section id="soft-skills" class="p-5 bg-light">
+    <h3 class="mb-4 text-center">Soft Skills</h3>
+    <ul class="list-unstyled text-center">
+        <li>Problem-Solving & Critical Thinking</li>
+        <li>Team Collaboration & Leadership</li>
+        <li>Adaptability & Quick Learning</li>
+        <li>Effective Communication</li>
+    </ul>
+</section>
+    
+    
+
+    
+    
+    
+    
+
+<section id="resume" class="p-5">
+    <h3>Resume</h3>
+    <a href="{{ url_for('resume') }}" class="btn btn-primary">Download Resume</a>
+</section>
+
+
+    <footer class="text-center p-3 bg-dark text-light">
+        <p>&copy; 2025 Anmol Chauhan. Empowering innovation with excellence.</p>
+        <p>
+            <i class="fas fa-envelope"></i> <a href="mailto:anmolchauhan827@gmail.com" class="text-light text-decoration-none">anmolchauhan827@gmail.com</a> |
+            <i class="fas fa-phone"></i> <a href="tel:8630977392" class="text-light text-decoration-none">8630977392</a> |
+            <i class="fas fa-map-marker-alt"></i> Delhi, India
+        </p>
+    </footer>
+    
+    <!-- Include Font Awesome if not already included -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
